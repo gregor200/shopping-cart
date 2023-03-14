@@ -1,12 +1,11 @@
 {
+  "home": "https://gregor200.github.io/",
   "name": "shopping-cart",
-  "homepage": "https://github.com/gregor200/",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "cra-template": "1.2.0",
     "gh": "^2.8.9",
-    "gh-pages": "^5.0.0",
     "pages": "^0.0.16",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -16,11 +15,11 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -39,5 +38,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
