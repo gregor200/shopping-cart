@@ -7,7 +7,7 @@ import { Shop, allShoes, allTshirts, allPants} from "./shop";
 
 
 
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 
 
 function RouteSwitch() {
@@ -48,6 +48,7 @@ function RouteSwitch() {
         setId(Math.random())
        }
     }
+
  
 
     //reloads the picked array
@@ -59,7 +60,7 @@ function RouteSwitch() {
   
 
     return (
-        <BrowserRouter>
+        <HashRouter>
 
       {/* Universal header across all pages*/}
         <header>
@@ -81,7 +82,7 @@ function RouteSwitch() {
         <Route exact path="/contacts" element = { <Contact />} />  
         
         </Routes>
-        </BrowserRouter>
+        </HashRouter>
     )
 }
 

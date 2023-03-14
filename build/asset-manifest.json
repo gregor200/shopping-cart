@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/gregor200/shopping-cart/static/css/main.f1a8efa3.css",
+    "main.js": "/gregor200/shopping-cart/static/js/main.73df022b.js",
+    "static/media/shopping.png": "/gregor200/shopping-cart/static/media/shopping.b69e6d7c477e94a9d42f.png",
+    "static/media/pumaMen.jpg": "/gregor200/shopping-cart/static/media/pumaMen.613653fed85b3e93847f.jpg",
+    "static/media/newBalanceMen.jpg": "/gregor200/shopping-cart/static/media/newBalanceMen.2ff8bee29472e6451ce4.jpg",
+    "static/media/squareToe.jpg": "/gregor200/shopping-cart/static/media/squareToe.e3c1ba2ecbc4e4279c8a.jpg",
+    "static/media/impdoo.jpg": "/gregor200/shopping-cart/static/media/impdoo.b075f851707eb90bfd15.jpg",
+    "static/media/louise.jpg": "/gregor200/shopping-cart/static/media/louise.9369e7a49b24afbb63ef.jpg",
+    "static/media/Brooks.jpg": "/gregor200/shopping-cart/static/media/Brooks.f452cc0b62d770b7d836.jpg",
+    "static/media/underAmour.jpg": "/gregor200/shopping-cart/static/media/underAmour.a4d7810c991741304ab0.jpg",
+    "static/media/consumer.jpg": "/gregor200/shopping-cart/static/media/consumer.b33ae56c229aa7120f61.jpg",
+    "static/media/consumer2.jpg": "/gregor200/shopping-cart/static/media/consumer2.7df422c61578e25cda9e.jpg",
+    "static/media/clubMonaco.jpg": "/gregor200/shopping-cart/static/media/clubMonaco.12ef994cbc23c2c7b9aa.jpg",
+    "static/media/ikunka.jpg": "/gregor200/shopping-cart/static/media/ikunka.accfaf2b595b560b95be.jpg",
+    "static/media/Bb.jpg": "/gregor200/shopping-cart/static/media/Bb.dc44c5a2339546a7543b.jpg",
+    "static/media/allenEdmond.jpg": "/gregor200/shopping-cart/static/media/allenEdmond.166f7a40f3a4828610bd.jpg",
+    "index.html": "/gregor200/shopping-cart/index.html",
+    "main.f1a8efa3.css.map": "/gregor200/shopping-cart/static/css/main.f1a8efa3.css.map",
+    "main.73df022b.js.map": "/gregor200/shopping-cart/static/js/main.73df022b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f1a8efa3.css",
+    "static/js/main.73df022b.js"
+  ]
+}
