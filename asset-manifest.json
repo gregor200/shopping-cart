@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gregor200/shopping-cart/static/css/main.f1a8efa3.css",
-    "main.js": "/gregor200/shopping-cart/static/js/main.73df022b.js",
+    "main.js": "/gregor200/shopping-cart/static/js/main.543832f9.js",
     "static/media/shopping.png": "/gregor200/shopping-cart/static/media/shopping.b69e6d7c477e94a9d42f.png",
     "static/media/pumaMen.jpg": "/gregor200/shopping-cart/static/media/pumaMen.613653fed85b3e93847f.jpg",
     "static/media/newBalanceMen.jpg": "/gregor200/shopping-cart/static/media/newBalanceMen.2ff8bee29472e6451ce4.jpg",
@@ -18,10 +18,10 @@
     "static/media/allenEdmond.jpg": "/gregor200/shopping-cart/static/media/allenEdmond.166f7a40f3a4828610bd.jpg",
     "index.html": "/gregor200/shopping-cart/index.html",
     "main.f1a8efa3.css.map": "/gregor200/shopping-cart/static/css/main.f1a8efa3.css.map",
-    "main.73df022b.js.map": "/gregor200/shopping-cart/static/js/main.73df022b.js.map"
+    "main.543832f9.js.map": "/gregor200/shopping-cart/static/js/main.543832f9.js.map"
   },
   "entrypoints": [
     "static/css/main.f1a8efa3.css",
-    "static/js/main.73df022b.js"
+    "static/js/main.543832f9.js"
   ]
 }
