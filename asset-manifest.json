@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/gregor200/static/css/main.0ce324e9.css",
-    "main.js": "/gregor200/static/js/main.52e50d6d.js",
-    "static/media/shopping.png": "/gregor200/static/media/shopping.b69e6d7c477e94a9d42f.png",
-    "static/media/pumaMen.jpg": "/gregor200/static/media/pumaMen.613653fed85b3e93847f.jpg",
-    "static/media/newBalanceMen.jpg": "/gregor200/static/media/newBalanceMen.2ff8bee29472e6451ce4.jpg",
-    "static/media/squareToe.jpg": "/gregor200/static/media/squareToe.e3c1ba2ecbc4e4279c8a.jpg",
-    "static/media/impdoo.jpg": "/gregor200/static/media/impdoo.b075f851707eb90bfd15.jpg",
-    "static/media/louise.jpg": "/gregor200/static/media/louise.9369e7a49b24afbb63ef.jpg",
-    "static/media/Brooks.jpg": "/gregor200/static/media/Brooks.f452cc0b62d770b7d836.jpg",
-    "static/media/underAmour.jpg": "/gregor200/static/media/underAmour.a4d7810c991741304ab0.jpg",
-    "static/media/consumer.jpg": "/gregor200/static/media/consumer.b33ae56c229aa7120f61.jpg",
-    "static/media/consumer2.jpg": "/gregor200/static/media/consumer2.7df422c61578e25cda9e.jpg",
-    "static/media/clubMonaco.jpg": "/gregor200/static/media/clubMonaco.12ef994cbc23c2c7b9aa.jpg",
-    "static/media/ikunka.jpg": "/gregor200/static/media/ikunka.accfaf2b595b560b95be.jpg",
-    "static/media/Bb.jpg": "/gregor200/static/media/Bb.dc44c5a2339546a7543b.jpg",
-    "static/media/allenEdmond.jpg": "/gregor200/static/media/allenEdmond.166f7a40f3a4828610bd.jpg",
-    "index.html": "/gregor200/index.html",
-    "main.0ce324e9.css.map": "/gregor200/static/css/main.0ce324e9.css.map",
-    "main.52e50d6d.js.map": "/gregor200/static/js/main.52e50d6d.js.map"
+    "main.css": "/static/css/main.88733f31.css",
+    "main.js": "/static/js/main.647feb13.js",
+    "static/media/shopping.png": "/static/media/shopping.b69e6d7c477e94a9d42f.png",
+    "static/media/pumaMen.jpg": "/static/media/pumaMen.613653fed85b3e93847f.jpg",
+    "static/media/newBalanceMen.jpg": "/static/media/newBalanceMen.2ff8bee29472e6451ce4.jpg",
+    "static/media/squareToe.jpg": "/static/media/squareToe.e3c1ba2ecbc4e4279c8a.jpg",
+    "static/media/impdoo.jpg": "/static/media/impdoo.b075f851707eb90bfd15.jpg",
+    "static/media/louise.jpg": "/static/media/louise.9369e7a49b24afbb63ef.jpg",
+    "static/media/Brooks.jpg": "/static/media/Brooks.f452cc0b62d770b7d836.jpg",
+    "static/media/underAmour.jpg": "/static/media/underAmour.a4d7810c991741304ab0.jpg",
+    "static/media/consumer.jpg": "/static/media/consumer.b33ae56c229aa7120f61.jpg",
+    "static/media/consumer2.jpg": "/static/media/consumer2.7df422c61578e25cda9e.jpg",
+    "static/media/clubMonaco.jpg": "/static/media/clubMonaco.12ef994cbc23c2c7b9aa.jpg",
+    "static/media/ikunka.jpg": "/static/media/ikunka.accfaf2b595b560b95be.jpg",
+    "static/media/Bb.jpg": "/static/media/Bb.dc44c5a2339546a7543b.jpg",
+    "static/media/allenEdmond.jpg": "/static/media/allenEdmond.166f7a40f3a4828610bd.jpg",
+    "index.html": "/index.html",
+    "main.88733f31.css.map": "/static/css/main.88733f31.css.map",
+    "main.647feb13.js.map": "/static/js/main.647feb13.js.map"
   },
   "entrypoints": [
-    "static/css/main.0ce324e9.css",
-    "static/js/main.52e50d6d.js"
+    "static/css/main.88733f31.css",
+    "static/js/main.647feb13.js"
   ]
 }
