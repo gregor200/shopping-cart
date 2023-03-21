@@ -1,111 +1,137 @@
-header {
-  background: #E7AB9A;
-  height: 10vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-decoration: none;
-  color: white;
-  gap: 3vw;
-  font-family: 'Roboto', sans-serif;
-  position: fixed;
-  z-index: 999;
-}
-@media only screen and (max-width: 480px) and (min-width: 320px)  {
-  header {
-      height: 8vh;
-      width: 100vw;
-      align-items: center;
-      gap: 1vw;
-  }
+.text {
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    width: 90%;
+    max-width: 600px;
+    margin: 0 auto;
 }
 
-
-.Headerlinks {
-  height: 100%;
-  width: 60vw;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  gap: 3.5vw;
-  position: relative;
-  top: .2vh;
+.text h1 {
+    font-size: 2rem;
 }
 
-@media only screen and (max-width: 490px) and (min-width: 320px)  {
- .Headerlinks {
-  left: -7vw;
-  top: 0.5vh;
-  gap: 5vw;
- } 
-}
-@media only screen and (max-width: 520px) and (min-width: 491px)  {
-  .Headerlinks {
-   left: -7vw;
-   gap: 5vw;
-  } 
-}
-@media only screen and (max-width: 1023px) and (min-width: 521px)  {
-.Headerlinks {
-  left: -7vw;
-  gap: 7vw;
-}
-}
-@media only screen and (max-width: 1200px) and (min-width: 1024px)  {
-  .Headerlinks {
-     left: -7vw;
-     gap: 9vw;
-  }
- }
- 
-
-
-
-
-header h1 {
-  position: relative;
-  left: 3vw;
-}
-@media only screen and (max-width: 490px) and (min-width: 320px)  {
-  header h1 {
-      font-size: 1.5rem;
-      left: 2.5vw;
-  }
-}
-@media only screen and (max-width: 520px) and (min-width: 491px)  {
-  header h1 {
-      font-size: 1.8rem;
-      left: 2.5vw;
-  }
+.text p {
+    font-size: 1.3rem;
+    font-weight: 200;
+    font-family: 'Nunito Sans', sans-serif;
 }
 
-@media only screen and (max-width: 1200px) and (min-width: 521px)  {
- header h1 {
-  left: 3vw;
-  font-size: 2rem;
- }
+@keyframes slideshow {
+   0% {
+    transform: translateX(0vw);
+   }
+   16% {
+    transform: translateX(-100vw);
+   }
+   32% {
+    transform: translateX(-200vw);
+   }
+   48% {
+    transform: translateX(-300vw);
+   }
+   64% {
+    transform: translateX(-200vw);
+   }
+   80% {
+    transform: translateX(-100vw);
+   }
+   100% {
+    transform: translateX(0vw);
+   }
+   
+}
+@media (min-width: 1000px) {
+    @keyframes slideshow {
+       0% {
+        transform: translateX(0vw);
+       }
+       25% {
+        transform: translateX(-50vw);
+       } 
+       50% {
+        transform: translateX(-100vw);
+       }
+       75% {
+        transform: translateX(-50vw);
+       }
+       100% {
+        transform: translateX(0vw);
+       }
+        
+     }
 }
 
 
 
 .intro {
-  background: url("./imgs/shopping.png");
-  height: 95vh;
-  width: 100vw;
-  position: relative;
-  top: 10vh;
+    height: 75vh;
+    width: 400vw;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    left: -0em;
+    animation: slideshow 12s ease 2s infinite normal;
+}
+@media (min-width: 1000px) {
+    .intro {
+        height: 85vh;
+        width: 200vw;
+    }
 }
 
-@media only screen and (max-width: 480px) and (min-width: 320px)  {
-.intro {
-  top: 8vh;
-  height: 100vh;
-  width: 100vw;
-  background-position: -28vw -4vh;
-  background-size: 650px 100vh; 
+
+.intro img {
+    width: 100vw;
+    object-position: center;
+    object-fit: cover;
 }
+@media (min-width: 1000px) {
+    .intro img {
+        width: 50vw;
+    }
 }
+
+
+
+.li {
+    position: absolute;
+    text-decoration: none;
+    top: 65vh;
+    right: 8%;
+    list-style-type: none;
+}
+@media (min-width: 1000px) {
+    .li {
+        top: 72vh;
+        right: 6%;
+    }
+}
+
+.li  button {
+    height: 4em;
+    margin-left: auto;
+    background: white;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: .5em 1em;
+    font-size: 1em;
+    cursor: pointer;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+}
+
+.li button:active {
+    border-color: grey;
+}
+
+
+
+.li button img {
+    width: 2em;
+    position: relative;
+}
+

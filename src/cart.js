@@ -1,18 +1,20 @@
 import React, {useState, useMemo} from "react";
 import cart from "./imgs/shopping-bag.png"
+import trash from "./imgs/trash.png";
 import "./cart.css";
 
 
 
 function Cart(props) {
    //imports picked products and slide function from RouteSwitch
-   const {products, slide, iid} = props;
+   const {products, slide, iid, sed,  empty} = props;
    
    //stores the total number of picked products
    const [total, setTotal] = useState(0);
    const [allitems, setAllitems] = useState(0);
    const [inc, setInc] = useState([]);
    const [dec, setDec] = useState([]);
+   const [des, setDes] = useState(sed);
 
    //increases the product quantity when the + button is clicked
    const increase = () => {
@@ -70,12 +72,24 @@ function Cart(props) {
     }
    }
 
+   function clear() {
+    setTotal(0);
+    setAllitems(0);
+   }
+
    //calls the total and the cart total to be recalculated when there is a change in 
    useMemo(() => {
      Total()
      cartTotal()
    }, [iid])
 
+   useMemo(() => {
+    if(sed > 0) {
+        setTotal(0);
+        setAllitems(0);
+        
+    }
+   }, [sed])
    
    //recalls the increase function when there is an increase
    useMemo(() => {
@@ -100,34 +114,20 @@ function Cart(props) {
    }, [products, inc, dec])
 
    //Shows and Hides the cart total when the selected products are zero, or when products are selected
-   useMemo(() => {
-    if(total > 1) { document.getElementById("num").style.display = "flex"};
-    if(total < 1 && dec.length > 0) { document.getElementById("num").style.display = "none"}
-   }, [total])
-
-  
-
+   
 
 
    
 
     return(
-        <div className="checkout">
-
-        <div className='cart'>
-
+        <div className="checkout" id="checkout">
      
-        <button className="circle" onClick={slide}>
-        <img src={cart} alt="cart"/>
-        </button>
-
-        <div className="num" id="num"><p>{allitems}</p></div>
-
-    
-         </div>
-
          <div className="yourItems" id="check">
-        <h2>Your items:</h2>
+         
+         <div className="heading">
+        <img src={trash} alt="delete" onClick={empty}/>
+        <h2> Your items: {allitems}</h2>
+          </div>
 
         <div className="items">
            {
@@ -161,8 +161,8 @@ function Cart(props) {
            }
        </div>
 
-       <p >Total: $ {total}</p>
-       <button >Checkout</button>
+       <p className="total">Total: $ {total}</p>
+       <button className="checkOut">Checkout</button>
 
 
        </div>

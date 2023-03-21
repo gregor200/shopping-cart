@@ -1,7 +1,11 @@
 import React, {useState, useEffect} from "react";
+import bag from "./imgs/whiteBag.png";
+import arrow from "./imgs/right-arrow.png"
+import woman from "./imgs/woman-shopping2.jpg"
+import woman2 from "./imgs/woman.jpg"
+import dot from "./imgs/full-stop.png"
 import App from "./App";
 import Cart from "./cart";
-import Contact from "./contacts"
 import { Link } from "react-router-dom";
 import { Shop, allShoes, allTshirts, allPants} from "./shop";
 
@@ -17,12 +21,20 @@ function RouteSwitch() {
     //Stores the Quantities of each picked product
     const quantities = [];
     const [iid, setId] = useState(0)
+    const [sed, setSed] = useState(0);
   
 
     //Slides the cart from left to right when the cart icon is clicked
     const slide = () => {
-        let check = document.getElementById("check");
+        let check = document.getElementById("checkout");
         check.classList.toggle("slideIn");
+     }
+
+     function rise() {
+      document.getElementById("alert").classList.toggle("rise");
+      setTimeout(() => {
+        document.getElementById("alert").classList.toggle("rise"); 
+      }, 600);
      }
 
 
@@ -30,6 +42,9 @@ function RouteSwitch() {
      const add = (e) => {
        let id = e.target.id;
        let check = picked.findIndex(x => x.title === e.target.id)
+       document.getElementById("dot").style.display = "flex";
+       document.getElementById("sp").innerText= id;
+       rise();
 
        if(check < 0) {
        let shoe = allShoes.filter((item) => (item.title === id));
@@ -49,7 +64,24 @@ function RouteSwitch() {
        }
     }
 
- 
+     function empty() {
+      if(picked.length > 0) {
+      setPicked([]);
+      setSed(sed + 1);
+      setTimeout(() => {
+        slide();
+      document.getElementById("dot").style.display = "none"; 
+      }, 500);
+
+      }
+      else {
+        slide()
+      }
+     }
+
+   
+
+     
 
     //reloads the picked array
     useEffect(() => {
@@ -63,23 +95,26 @@ function RouteSwitch() {
         <HashRouter>
 
       {/* Universal header across all pages*/}
+        
         <header>
-        <h1>Xstore</h1>
-        <div className="Headerlinks">
-        <Link className='link' to = "/">Home</Link>
-        <Link className='link' to = "/shop">Shop</Link>
-        <Link className='link' to = "/contacts">Contacts</Link>
-        </div>
-       </header>
+          <Link className="link" to = "/">
+          <li>Xstore</li>
+          </Link>
+          <div className="images" onClick={slide}>
+          <img src={bag} alt="bag" />
+          <img  className="dot" id="dot" src={dot} alt="dog"/>
+
+           </div>
+        </header>
 
         {/* Displays the Cart component and sends picked products to be displayed */}
-        <Cart products = {picked} Quantities = {quantities} slide = {slide} iid = {iid} />
+        <Cart products = {picked} Quantities = {quantities} slide = {slide} iid = {iid} empty = {empty} sed = {sed}/>
 
         <Routes>
 
         <Route exact path="/" element = { <App />} />
         <Route exact path="/shop" element = { <Shop add = {add} />} />  
-        <Route exact path="/contacts" element = { <Contact />} />  
+  
         
         </Routes>
         </HashRouter>

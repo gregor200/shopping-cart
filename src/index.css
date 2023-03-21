@@ -1,17 +1,87 @@
-body {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
+
+html {
+    font-size: 12px;
     overflow-x: hidden;
 }
-@media only screen and (max-width: 1200px) and (min-width: 320px)  {
-    html, body {
-        margin: 0;
-        overflow-x: hidden;
-        overflow-y: auto;
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        gap: 1vh; 
+
+body {
+ margin: 0;
+ height: auto;
+ overflow: hidden;
+}
+
+/* Header content */
+
+header {
+    height: 8vh;
+    display: flex;
+    justify-content: space-between;
+    width: 98%;
+    align-items: center;
+    padding: 0em 1em;
+    margin: 0 auto;
+    position: fixed;
+    background: #408E91;
+    z-index: 99;
+}
+@media (min-width: 1200px) {
+    header {
+        width: 99%;
+        
     }
 }
+
+.images {
+    width: 5em;
+    display: flex;
+    pointer-events: all;
+    cursor: pointer;
+}
+
+
+.dot {
+    position: relative;
+    right: 3.2em;
+    bottom: 1em;
+    display: none;
+}
+
+
+
+header img {
+  width: 4em;
+  position: relative;
+  margin-bottom: .8em;
+  margin-right: .5em;
+  pointer-events: all;
+  cursor: pointer;
+}
+
+
+header p {
+    font-size: 2.2em;
+}
+
+ 
+.text-content {
+    display: flex;
+    height: 8%;
+    width: 95%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 1em;
+}
+
+.link {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+
+
+
+

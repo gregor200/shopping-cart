@@ -1,17 +1,18 @@
 import React, {useState, useMemo, useEffect} from "react";
 import shopcss from "./shop.css"
+import filter from "./imgs/filter.png";
 import Pants from "./pants";
 import Tshirts from "./t-shirts";
 import Shoes from "./shoes";
 
-import newBalanceMen from "./imgs/newBalanceMen.jpg"
+import newBalanceMen from "./imgs/nbmen.webp"
 import allenEdmond from "./imgs/allenEdmond.jpg"
-import pumaMen from "./imgs/pumaMen.jpg";
+import pumaMen from "./imgs/pmgolf.jpg";
 import ikunka from "./imgs/ikunka.jpg";
-import Bruno from "./imgs/Brunomarc.jpg";
-import nbWomen from "./imgs/nbWomen.jpg";
+import Bruno from "./imgs/bruno.jpeg";
+import nbWomen from "./imgs/nbwomen.webp";
 import impdoo from "./imgs/impdoo.jpg";
-import Brooks from "./imgs/Brooks.jpg";
+import Brooks from "./imgs/brooks.jpeg";
 import squareToe from "./imgs/squareToe.jpg";
 import Blondo from "./imgs/Blondo.jpg";
 import uniqid from "uniqid";
@@ -68,7 +69,7 @@ const allShoes = [
     {title: "Women shaping skinny jeans", gender:"female", price: 21.63, img: womenSkinny, id: uniqid()},
     {title: "Men's straight fit Jeans", gender:"male", price: 23.40, img: menStraightfit, id: uniqid()},
     {title: "Levi's Relaxed Straight Jeans", gender:"male", price: 30.72, img: relaxedStraight, id: uniqid()},
-    {title: "Democracy Women's Straight Leg Jean", gender:"female", price: 68.45, img: womenPetite, id: uniqid()},
+    {title: "Democracy Women's Jeans", gender:"female", price: 68.45, img: womenPetite, id: uniqid()},
     {title: "Women ripped jeans", gender:"female", price: 45.99, img: womenRipped, id: uniqid()},
     {title: "MICKASON Men's Ripped jeans", gender:"male", price: 40.99, img: menRipped, id: uniqid()},
     {title: "Women shapping pull-on jeans", gender:"female", price: 24.60, img: shaping, id: uniqid()},
@@ -217,15 +218,25 @@ if(less100 == true && male == true) {
 
 }, [female, male, all, less50, great50, less100, great100])
 
+function drop() {
+  document.getElementById("filters").classList.toggle("dropdown")
+}
+
 return (
     <div>
 
     <div className="content" >
 
-        <div className="options">  
-             <h1>Filter</h1>
-        <div className="filters">
+    <div className="alert" id="alert">
+              <p>
+             <span id="sp">Allen Edmond's Men's Carlyle Oxford</span> < br/>
+                Added to cart
+                </p>
+            </div>
+
+        <div className="filters" id="filters">
             <h2>Gender</h2>
+
         <label htmlFor="all">
             All {prod}<input type="checkbox" checked = {all} onChange = {() => {
             if(male == true || female == true) {setFemale(false); setMale(false); setAll(true)}
@@ -272,14 +283,15 @@ return (
            else {setGreat100(false)}
            }} />
            </label>
-           
-
-           </div>
+          
 
         </div>
 
         <div className="products" id="prod">
-            <div className="categories">
+        <div className="categories">
+
+           <img onClick={drop} src={filter} alt="filter"/>
+
             <button onClick={() => {setShoes(true); setPants(false); setTshirt(false); 
             setColor("#E8D5C4"); setColor2("#609EA2"); setColor3("#609EA2");
             setAll(true); setFemale(false); setMale(false)
@@ -300,14 +312,18 @@ return (
             style ={{background: color3}}>Pants</button>
             </div>
 
-            <div className="prod" >
+             </div>
+            
+
+             <div className="prod" >
                { shoes ? <Shoes addToCheck = {add} avShoes = {avShoes} /> : void(0) }
                { tshirts ? <Tshirts addToCheck = {add} avTshirts = {avTshirts}  /> : void(0) }
                { pants ? <Pants addToCheck = {add} avPants = {avPants} /> : void(0) }
             </div>
+
         </div>
 
-    </div>
+
 
     </div>
 )
