@@ -1,27 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.88733f31.css",
-    "main.js": "/static/js/main.647feb13.js",
-    "static/media/shopping.png": "/static/media/shopping.b69e6d7c477e94a9d42f.png",
-    "static/media/pumaMen.jpg": "/static/media/pumaMen.613653fed85b3e93847f.jpg",
-    "static/media/newBalanceMen.jpg": "/static/media/newBalanceMen.2ff8bee29472e6451ce4.jpg",
+    "main.css": "/static/css/main.cd8e59b4.css",
+    "main.js": "/static/js/main.fd7ce299.js",
+    "static/media/clothes.jpg": "/static/media/clothes.793905c2cb61a5d8a1ea.jpg",
+    "static/media/lady.jpg": "/static/media/lady.5985ce6f09ace99b182d.jpg",
+    "static/media/man5.jpg": "/static/media/man5.b90bed13d9d0bb06c291.jpg",
+    "static/media/woman.jpg": "/static/media/woman.0dd415462ab285274903.jpg",
+    "static/media/allenEdmond.jpg": "/static/media/allenEdmond.deb069eb61c8c634e2d1.jpg",
+    "static/media/woman-shopping2.jpg": "/static/media/woman-shopping2.0dec00b04788b5a2ab32.jpg",
+    "static/media/bruno.jpeg": "/static/media/bruno.75d6199600427de0bdb3.jpeg",
     "static/media/squareToe.jpg": "/static/media/squareToe.e3c1ba2ecbc4e4279c8a.jpg",
     "static/media/impdoo.jpg": "/static/media/impdoo.b075f851707eb90bfd15.jpg",
+    "static/media/nbmen.webp": "/static/media/nbmen.30e5f1afb61662193709.webp",
+    "static/media/nbwomen.webp": "/static/media/nbwomen.92626a56cf47ae2be4c5.webp",
     "static/media/louise.jpg": "/static/media/louise.9369e7a49b24afbb63ef.jpg",
-    "static/media/Brooks.jpg": "/static/media/Brooks.f452cc0b62d770b7d836.jpg",
     "static/media/underAmour.jpg": "/static/media/underAmour.a4d7810c991741304ab0.jpg",
     "static/media/consumer.jpg": "/static/media/consumer.b33ae56c229aa7120f61.jpg",
+    "static/media/filter.png": "/static/media/filter.4546628c1cfb552515eb.png",
     "static/media/consumer2.jpg": "/static/media/consumer2.7df422c61578e25cda9e.jpg",
+    "static/media/pmgolf.jpg": "/static/media/pmgolf.d5b140ae501dac10c021.jpg",
     "static/media/clubMonaco.jpg": "/static/media/clubMonaco.12ef994cbc23c2c7b9aa.jpg",
     "static/media/ikunka.jpg": "/static/media/ikunka.accfaf2b595b560b95be.jpg",
     "static/media/Bb.jpg": "/static/media/Bb.dc44c5a2339546a7543b.jpg",
-    "static/media/allenEdmond.jpg": "/static/media/allenEdmond.166f7a40f3a4828610bd.jpg",
+    "static/media/trash.png": "/static/media/trash.c4e35861d2606e76ed78.png",
     "index.html": "/index.html",
-    "main.88733f31.css.map": "/static/css/main.88733f31.css.map",
-    "main.647feb13.js.map": "/static/js/main.647feb13.js.map"
+    "main.cd8e59b4.css.map": "/static/css/main.cd8e59b4.css.map",
+    "main.fd7ce299.js.map": "/static/js/main.fd7ce299.js.map"
   },
   "entrypoints": [
-    "static/css/main.88733f31.css",
-    "static/js/main.647feb13.js"
+    "static/css/main.cd8e59b4.css",
+    "static/js/main.fd7ce299.js"
   ]
 }
