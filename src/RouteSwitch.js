@@ -34,7 +34,7 @@ function RouteSwitch() {
       document.getElementById("alert").classList.toggle("rise");
       setTimeout(() => {
         document.getElementById("alert").classList.toggle("rise"); 
-      }, 600);
+      }, 1000);
      }
 
 
